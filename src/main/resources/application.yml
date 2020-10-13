@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: dev
+  devtools:
+    remote:
+      secret: test
+      debug:
+        local-port: 14001
+    restart:
+      enabled: true
+  freemarker:
+    checkTemplateLocation: false
+
+  h2:
+    console:
+      enable: true
+      path: /h2-console
+      settings:
+        trace: true
+        web-allow-others: true
+
+mybatis:
+  check_config_location: true
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath*:/mappers/*.xml
+  type-aliases-package: com.github.javarunfast.mbye.domain
+  scripting-language-driver:
+    freemarker:
+      template-file:
+        base-dir: mappers/
+      path-provider:
+        includes-package-path: false
+        separate-directory-per-mapper: false
+
+
+mbye:
+  jwt:
+    secret: bGsyMzRqbGs4MDIzNGxzZOWPr+i/nuaOpeWFi+mHjOaWr+acteWkq2lzb2Zpb3MyM3U4NDMybmRzZGZzb2tqampza2xmanNsayVeJl4mJSQjJCQlIzgzIDEyPTEyeTN1aXV5Jl4=
+    expire: 1800
