@@ -19,19 +19,6 @@ spring:
         trace: true
         web-allow-others: true
 
-mybatis:
-  check_config_location: true
-  config-locations: classpath:mybatis/mybatis-config.xml
-  mapper-locations: classpath*:/mappers/*.xml
-  type-aliases-package: com.github.javarunfast.mbye.domain
-  scripting-language-driver:
-    freemarker:
-      template-file:
-        base-dir: mappers/
-      path-provider:
-        includes-package-path: false
-        separate-directory-per-mapper: false
-
 
 mbye:
   jwt:

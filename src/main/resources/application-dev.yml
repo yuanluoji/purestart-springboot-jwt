@@ -1,14 +1,3 @@
-spring:
-  datasource:
-    #driver-class-name: org.h2.Driver
-    #url: jdbc:h2:mem:test;MODE=MySQL;DATABASE_TO_LOWER=TRUE
-    #schema: classpath:sql/h2/schema.sql
-    #data: classpath:sql/h2/data.sql
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mbye?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=round&useSSL=false&serverTimezone=GMT%2B8
-    username: root
-    password: shurumima
-
 logging:
   level:
     root: DEBUG
